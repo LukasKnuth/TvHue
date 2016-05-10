@@ -17,7 +17,7 @@ public class BridgeListDialog {
 
     public static Dialog showList(Context context, List<PHAccessPoint> bridges, final BridgeSelectedListener listener){
         final BridgeAdapter adapter = new BridgeAdapter(context, bridges);
-        return new AlertDialog.Builder(context)
+        Dialog dialog = new AlertDialog.Builder(context)
                 .setTitle(R.string.dialog_bridgeList_title)
                 .setAdapter(adapter, new DialogInterface.OnClickListener() {
                     @Override
@@ -27,7 +27,15 @@ public class BridgeListDialog {
                         dialog.dismiss();
                     }
                 })
+                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
                 .create();
+        dialog.show();
+        return dialog;
     }
 
     public interface BridgeSelectedListener{
