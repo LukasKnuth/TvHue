@@ -16,6 +16,7 @@
     </style>
     <style name="StatusTable.Entry">
         <item name="android:textSize">20sp</item>
+        <item name="android:minWidth">300dp</item>
     </style>
 
 </resources>
