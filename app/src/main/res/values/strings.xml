@@ -6,4 +6,20 @@
     <string name="dialog.pushlink.message">Press the Button on your Hue bridge.</string>
     <!-- Bridge-List dialog -->
     <string name="dialog.bridgeList.title">Select a Bridge</string>
+    <!-- Main-activity -->
+    <string name="lbl.status">Status</string>
+    <string name="lbl.hue_ip">Hue IP</string>
+    <string name="lbl.sensor_value">Current Sensor Value</string>
+    <string name="lbl.brightness">Keep Lumen at</string>
+    <string name="lbl.selected_scene">Use Scene</string>
+    <string name="lbl.reconnect">Reconnect Hue</string>
+    <string name="btn.reconnect_hue">Reconnect</string>
+
+    <!-- Connection-states -->
+    <string name="status.connecting">Connecting…</string>
+    <string name="status.searching">Searching for bridges…</string>
+    <string name="status.connected">Connected!</string>
+    <string name="status.authenticating">Authenticating… (Interaction required!)</string>
+    <string name="status.connection_lost">Connection lost!</string>
+    <string name="status.error">Error (Check log!)</string>
 </resources>

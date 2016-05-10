@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<TableLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -8,10 +8,50 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context=".ActivityMain">
+        tools:context=".ActivityMain"
+        android:stretchColumns="0">
 
-    <TextView
-            android:text="Hello World!"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-</RelativeLayout>
+    <TableRow style="@style/StatusTable.Row">
+        <TextView style="@style/StatusTable.Entry"
+                  android:text="@string/lbl.status"/>
+        <TextView android:id="@+id/connection_status"
+                  style="@style/StatusTable.Entry"
+                  android:text="@string/status.connecting"/>
+    </TableRow>
+    <TableRow style="@style/StatusTable.Row">
+        <TextView style="@style/StatusTable.Entry"
+                  android:text="@string/lbl.hue_ip"/>
+        <TextView android:id="@+id/hue_ip"
+                  style="@style/StatusTable.Entry"
+                  tools:text="192.168.1.102"
+                />
+    </TableRow>
+    <TableRow style="@style/StatusTable.Row">
+        <TextView style="@style/StatusTable.Entry"
+                  android:text="@string/lbl.sensor_value"/>
+        <TextView android:id="@+id/sensor_value"
+                  style="@style/StatusTable.Entry"
+                  tools:text="12.4 L"/>
+    </TableRow>
+    <TableRow style="@style/StatusTable.Row">
+        <TextView style="@style/StatusTable.Entry"
+                  android:text="@string/lbl.brightness"/>
+        <SeekBar android:id="@+id/selected_brightness"
+                />
+    </TableRow>
+    <TableRow style="@style/StatusTable.Row">
+        <TextView style="@style/StatusTable.Entry"
+                  android:text="@string/lbl.selected_scene"/>
+        <Spinner android:id="@+id/selected_scene"
+                />
+    </TableRow>
+    <TableRow style="@style/StatusTable.Row">
+        <TextView style="@style/StatusTable.Entry"
+                  android:text="@string/lbl.reconnect"
+                />
+        <Button android:id="@+id/reconnect_hue"
+                android:text="@string/btn.reconnect_hue"/>
+    </TableRow>
+
+
+</TableLayout>

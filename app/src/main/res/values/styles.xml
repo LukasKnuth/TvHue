@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="StatusTable">
+
+    </style>
+    <style name="StatusTable.Row">
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="StatusTable.Entry">
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>
