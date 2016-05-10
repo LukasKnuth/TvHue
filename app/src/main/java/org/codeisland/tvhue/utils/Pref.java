@@ -1,4 +1,4 @@
-package org.codeisland.tvhue.persistant;
+package org.codeisland.tvhue.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,7 +19,7 @@ public class Pref {
     public static void storeBridge(Context context, PHBridge bridge, String username){
         SharedPreferences pref = getPref(context);
         pref.edit()
-                .putString(PREF_IP, bridge.getResourceCache().getBridgeConfiguration().getIpAddress())
+                .putString(PREF_IP, HueHelper.getIp(bridge))
                 .putString(PREF_USERNAME, username)
                 .apply();
     }
