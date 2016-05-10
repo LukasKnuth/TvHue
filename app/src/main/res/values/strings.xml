@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TvHue</string>
+
+    <!-- Push-Link dialog -->
+    <string name="dialog.pushlink.title">PushLink</string>
+    <string name="dialog.pushlink.message">Press the Button on your Hue bridge.</string>
+    <!-- Bridge-List dialog -->
+    <string name="dialog.bridgeList.title">Select a Bridge</string>
+</resources>

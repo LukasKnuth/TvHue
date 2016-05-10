@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <TextView android:id="@+id/item_bridge_id"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:text="Test Bridge"
+              android:textSize="18sp"
+            />
+    <TextView android:id="@+id/item_bridge_ip"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:text="192.168.1.4"
+              android:textSize="16sp"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="5dp"
+            />
+
+</LinearLayout>
